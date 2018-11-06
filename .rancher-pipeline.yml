@@ -1,0 +1,27 @@
+stages:
+- name: Build
+  steps:
+  - runScriptConfig:
+      image: bayesimpact/react-base
+      shellScript: |-
+        npm install
+        npm run build
+- name: Publish
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: example-react:${CICD_PIPELINE_ID}-${CICD_EXECUTION_SEQUENCE}
+## internal registry
+      registry: 127.0.0.1:34838
+## external registry
+#      pushRemote: true
+#      registry: index.docker.io
+- name: Deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
+timeout: 60
+branch:
+  include:
+  - master
