@@ -5,8 +5,15 @@ import Typography from "views/Typography/Typography.jsx";
 import TableList from "views/TableList/TableList.jsx";
 import Maps from "views/Maps/Maps.jsx";
 import UserPage from "views/UserPage/UserPage.jsx";
+import Wunca38 from "views/Wunca38/Wunca38.jsx";
 
 var dashRoutes = [
+  {
+    path: "/wunca38",
+    name: "wunca38",
+    icon: "nc-icon nc-app",
+    component: Wunca38
+  },
   {
     path: "/dashboard",
     name: "Dashboard",
@@ -43,12 +50,6 @@ var dashRoutes = [
     name: "Typography",
     icon: "nc-icon nc-caps-small",
     component: Typography
-  },
-  {
-    pro: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "nc-icon nc-spaceship"
   },
   { redirect: true, path: "/", pathTo: "/dashboard", name: "Dashboard" }
 ];

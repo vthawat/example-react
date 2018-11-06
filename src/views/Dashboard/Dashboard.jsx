@@ -37,7 +37,7 @@ class Dashboard extends React.Component {
                   <Col xs={7} md={8}>
                     <div className="numbers">
                       <p className="card-category">Capacity</p>
-                      <CardTitle tag="p">150GB</CardTitle>
+                      <CardTitle tag="p">200GB</CardTitle>
                     </div>
                   </Col>
                 </Row>
