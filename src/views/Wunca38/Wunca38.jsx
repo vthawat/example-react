@@ -12,7 +12,7 @@ class User extends React.Component {
           <Col xs={12} sm={12} md={12} lg={12}>
           <Card>
           <CardHeader>
-             <CardTitle>Welcome to WUNCA38 Workshop: Create own the CI/CD it easey!</CardTitle>
+             <CardTitle>Workshop: Create own the CI/CD it easey!</CardTitle>
           </CardHeader>
           <hr/>
           <CardBody> 
