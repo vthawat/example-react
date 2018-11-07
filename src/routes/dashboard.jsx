@@ -10,7 +10,7 @@ import Wunca38 from "views/Wunca38/Wunca38.jsx";
 var dashRoutes = [
   {
     path: "/wunca38",
-    name: "wunca38",
+    name: "Wunca38",
     icon: "nc-icon nc-app",
     component: Wunca38
   },
@@ -51,6 +51,6 @@ var dashRoutes = [
     icon: "nc-icon nc-caps-small",
     component: Typography
   },
-  { redirect: true, path: "/", pathTo: "/dashboard", name: "Dashboard" }
+  { redirect: true, path: "/", pathTo: "/wunca38", name: "Wunca38" }
 ];
 export default dashRoutes;

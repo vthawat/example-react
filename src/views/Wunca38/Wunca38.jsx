@@ -1,17 +1,8 @@
 import React from "react";
 import { Card, CardHeader, CardBody, CardTitle, CardFooter, Row, Col } from "reactstrap";
-
-import CardAuthor from "components/CardElements/CardAuthor.jsx";
-import FormInputs from "components/FormInputs/FormInputs.jsx";
-import Button from "components/CustomButton/CustomButton.jsx";
-
-import damirBosnjak from "assets/img/damir-bosnjak.jpg";
-import mike from "assets/img/mike.jpg";
-import ayoOgunseinde2 from "assets/img/faces/ayo-ogunseinde-2.jpg";
-import joeGardner2 from "assets/img/faces/joe-gardner-2.jpg";
-import clemOnojeghuo2 from "assets/img/faces/clem-onojeghuo-2.jpg";
 import mascot from "assets/img/mascot.png";
 import wunca_logo from "assets/img/logo_wunca.png";
+import wunca38_css from "assets/wunca38/wunca38.css";
 
 class User extends React.Component {
   render() {
@@ -21,18 +12,20 @@ class User extends React.Component {
           <Col xs={12} sm={12} md={12} lg={12}>
           <Card>
           <CardHeader>
-             <CardTitle>Welcome to WUNCA38</CardTitle>
+             <CardTitle>Welcome to WUNCA38 Workshop: Create own the CI/CD it easey!</CardTitle>
           </CardHeader>
+          <hr/>
           <CardBody> 
               <Row>
-                  <Col xs={6} md={6}> 
-                     <img src={mascot} alt="..." />
+                  <Col xs={12} md={3}> 
+                    <img class="wunca-logo" src={wunca_logo} alt="..." />
                 </Col>
-                <Col xs={6} md={6}> 
-                     <img src={wunca_logo} alt="..." />
+                <Col xs={12} md={4}> 
+                <img src={mascot} alt="..." /><p>Hello this example for build and deploy react web application.</p>
                 </Col>
                 </Row>
           </CardBody>
+          <CardFooter><h3>23-25 Jan 2019</h3></CardFooter>
           </Card>
 
           </Col>

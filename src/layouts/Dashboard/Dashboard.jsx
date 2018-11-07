@@ -1,6 +1,6 @@
 import React from "react";
 // javascript plugin used to create scrollbars on windows
-import PerfectScrollbar from "perfect-scrollbar";
+//import PerfectScrollbar from "perfect-scrollbar";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Header from "components/Header/Header.jsx";
 //import Footer from "components/Footer/Footer.jsx";
@@ -16,14 +16,14 @@ class Dashboard extends React.Component {
     super(props);
     this.state = {
       backgroundColor: "black",
-      activeColor: "info",
+      activeColor: "warning",
     }
   }
   componentDidMount() {
-    if (navigator.platform.indexOf("Win") > -1) {
+    /*if (navigator.platform.indexOf("Win") > -1) {
       ps = new PerfectScrollbar(this.refs.mainPanel);
-      document.body.classList.toggle("perfect-scrollbar-on");
-    }
+     // document.body.classList.toggle("perfect-scrollbar-on");
+    }*/
   }
   componentWillUnmount() {
     if (navigator.platform.indexOf("Win") > -1) {
