@@ -4,8 +4,9 @@ stages:
   - runScriptConfig:
       image: bayesimpact/react-base
       shellScript: |-
-        npm install
-        npm run build
+        yarn
+        yarn test --coverage
+        yarn build
 - name: Publish
   steps:
   - publishImageConfig:
