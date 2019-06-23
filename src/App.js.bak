@@ -1,0 +1,57 @@
+import React, { Component } from 'react';
+import { AppTemplate } from 'layouts/templates';
+import { Route, Switch, Redirect } from 'react-router-dom';
+
+import DashboardPage from 'page/DashboardPage';
+import DataPage from 'page/DataPage';
+import FormPage from 'page/FormPage';
+import ChartPage from 'page/ChartPage';
+
+class App extends Component {
+  render() {
+    const menuItems = [
+      { label: 'Main Menu', isHeader: true },
+      { label: '<i class="fa fa-dashboard"></i> <span>Dashboard</span>', link: '/dashboard' },
+      { label: '<i class="fa fa-th-large"></i> <span>Data</span>', link: '/data', extendLabel: <label className="label label-info">3</label>},
+      { label: '<i class="fa fa-file-o"></i> Form</span>', link: '/form', extendLabel: <label className="label label-info">6</label>},
+      { label: '<i class="fa fa-times"></i> Chart</span>', link: '/chart', extendLabel: <label className="label label-info">6</label>},
+      { 
+        label: 'Menu 4', 
+        link: '/data', 
+        childItems: [
+          { label: 'Menu 2-1', link: '/data' },
+          { label: 'Menu 2-2', link: '/data' },
+          { label: 'Menu 2-3', link: '/data' },
+        ]
+      },      
+    ]
+    const notificationItems = [
+      { text: 'Notification 1', link: '/', status: 'warning' },
+      { text: 'Notification 2', link: '/', status: 'info' },
+      { text: 'Notification 3', link: '/', status: 'danger' },
+      { text: 'Notification 4', link: '/', status: 'success' },
+    ]
+    return (
+      <AppTemplate
+        logoText="<b>Admin</b>LTE" 
+        logoTextMini="LTE" 
+        userName="Alex Hunter" 
+        userPosition="Administrator"
+        userImage="http://futhead.cursecdn.com/static/img/17/players/26501.png"
+        menuItems={menuItems}
+        notificationItems={notificationItems}
+        version="1.0.1"
+        copyrightYear="2017"
+        companyName="PSU-Engineering ECS"> 
+        <Switch>
+          <Route path="/dashboard" component={DashboardPage}/>
+          <Route path="/data" component={DataPage}/>
+          <Route path="/form" component={FormPage}/>
+          <Route path="/chart" component={ChartPage} />
+          <Redirect from="/" to="/dashboard"/>
+        </Switch>    
+      </AppTemplate>
+    );
+  }
+}
+export default App;

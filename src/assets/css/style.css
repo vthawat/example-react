@@ -1,0 +1,22 @@
+body, html {
+	min-height: 100vh !important;
+	height: 100vh !important;
+}
+.wrapper {
+	min-height: 100vh !important;
+}
+.block {
+	display: block;
+}
+
+.sidebar-menu > li > a .fa {
+	margin-right: 5px;
+}
+
+.panel-default > .panel-heading {
+	border-color: none !important;
+	background-color: #fff !important;
+}
+.panel-default > .panel-heading .panel-title > a {
+	color: #337ab7;
+}

@@ -1,0 +1,107 @@
+@import 'https://fonts.googleapis.com/css?family=Kanit&display=swap';
+
+.wrapper {	
+	min-height: 100vh;
+	height: 100vh;	
+}
+.navbar-logo {
+	padding: 10px !important;
+}
+.navbar-brand > img {
+	display: inline-block !important;
+}
+.navbar-brand > .navbar-title {
+	margin-left: 5px;
+}
+.app-logo {
+	max-height: 180px;
+	margin-bottom: 10px;
+}
+.app-title {
+	font-family: 'Kanit', sans-serif;
+	font-size: 2.4em;
+	color: #fff;
+	margin-bottom: 20px;
+	padding: 0;
+}
+.app-desc {
+	font-family: 'Kanit', sans-serif;
+	font-size: 1.1em;
+	line-height: 1.6em;
+	text-align: left;
+	color: #fff;
+}
+.text-version {
+	margin-top: 10px;
+	color: #fff;
+}
+.col-login {
+	background-color: #fff;
+}
+.col-login * {
+	color: #222;	
+}
+.dialog {		
+	margin: 10vh auto;
+	max-width: 80%;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.dialog.content {
+	margin: 5vh auto;
+	background-color: #fff;
+	padding: 1.25em 1.5em;
+}
+.dialog.content .top-bar {
+	margin-bottom: 15px;
+}
+.pane {
+	padding: 25px 20px;
+	min-height: 400px;
+}
+.pane-desc {
+	text-align: center;
+}
+.pane-login {	
+	display: flex;
+}
+.img-section {
+	text-align: center;
+}
+.img-psupassport {
+	width: 120px;	
+	margin: 20px 0;
+}
+.login-title{
+	font-family: 'Kanit', sans-serif;
+	margin: 10px 0;
+}
+.login-desc {
+	font-size: 1.2em;
+}
+.form-login {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+.form-login > .section {
+	flex: 1;
+}
+.form-login > .section.info {	
+	text-align: center;
+	justify-content: flex-end;
+}
+.form-login .btn-login {	
+	align-self: flex-end;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.footer * {
+	color: #fff;
+}
+.contact-title {
+	display: block;
+	font-weight: bold;
+}
