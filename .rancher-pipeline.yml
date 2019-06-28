@@ -12,10 +12,10 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: example-react:${CICD_PIPELINE_ID}-${CICD_EXECUTION_SEQUENCE}
+      tag: vthawat/wunca39:version-${CICD_EXECUTION_SEQUENCE}
 ## external registry
-#      pushRemote: true
-#      registry: index.docker.io
+      pushRemote: true
+      registry: index.docker.io
 - name: Deploy
   steps:
   - applyYamlConfig:
