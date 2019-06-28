@@ -35,14 +35,14 @@ spec:
         ports:
         - containerPort: 80
 ## Ingress example
-#---
-#apiVersion: extensions/v1beta1
-#kind: Ingress
-#metadata:
-#  name: react-web
-#spec:
-#  rules:
-#  - host: react-web.172.31.0.179.nip.io
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: react-web
+spec:
+  rules:
+  - host: example-react.192.168.84.117.xip.io
 #    http:
 #      paths:
 #      - backend:
