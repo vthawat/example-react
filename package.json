@@ -5,7 +5,7 @@
   "dependencies": {
     "admin-lte": "^2.4.2",
     "bootstrap": "^3.3.7",
-    "chart.js": "^2.7.1",
+    "chart.js": "^2.9.4",
     "classnames": "^2.2.6",
     "color": "^3.1.2",
     "enzyme": "^3.10.0",
